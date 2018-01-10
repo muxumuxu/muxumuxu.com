@@ -41,13 +41,13 @@ const config = {
   ],
   sitemap: {
     routes: [
-      '/fr',
-      '/fr/work',
-      '/fr/services',
-      '/fr/ventures',
-      '/fr/about',
-      '/fr/blog',
-      '/fr/careers'
+      '/',
+      '/work',
+      '/services',
+      '/ventures',
+      '/about',
+      '/blog',
+      '/careers'
     ]
   },
   /*
@@ -58,7 +58,7 @@ const config = {
   ** Router configuration
   */
   router: {
-    middleware: ['user-locale', 'contentful']
+    middleware: ['contentful']
   },
   /*
   ** Plugin configuration

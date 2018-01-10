@@ -12,3 +12,5 @@ dist
 
 # miscellaneous
 .vscode
+
+.env

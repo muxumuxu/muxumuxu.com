@@ -7,7 +7,7 @@ const maxAge = process.env.NODE_ENV === 'production'
   : 1000 * 10
 
 /* Fetch a all record of a specific contentful content type */
-const fetchContentType = memoizee((contentTypeId, locale = '*', include = 4) => {
+const fetchContentType = memoizee((contentTypeId, locale = 'en', include = 4) => {
   return contentful
     .getEntries({ content_type: contentTypeId, locale, include })
     .then(response => response.items)
