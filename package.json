@@ -1,0 +1,46 @@
+{
+  "name": "muxumuxu.com",
+  "version": "1.0.0",
+  "description": "Muxu.Muxu website",
+  "author": "dmiotti <david@muxumuxu.com>",
+  "private": true,
+  "scripts": {
+    "dev": "HOST=0.0.0.0 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "build-doc": "cd docs-src; gitbook install && gitbook build; cp -R _book/* ../docs",
+    "deploy": "heroku container:push web --app muxumuxu",
+    "deploy-preview": "heroku container:push web --app preview-muxumuxu",
+    "deploy-all": "npm run deploy; npm run deploy-preview"
+  },
+  "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.1",
+    "@nuxtjs/sitemap": "0.0.3",
+    "axios": "^0.17.1",
+    "contentful": "^4.6.4",
+    "contentful-sdk-core": "^5.0.1",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.9",
+    "memoizee": "^0.4.11",
+    "nuxt": "^1.0.0-rc9",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.7.2",
+    "prettier-eslint": "^8.6.2",
+    "sass-loader": "^6.0.6"
+  }
+}
