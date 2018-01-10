@@ -12,9 +12,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "build-doc": "cd docs-src; gitbook install && gitbook build; cp -R _book/* ../docs",
-    "deploy": "heroku container:push web --app muxumuxu",
-    "deploy-preview": "heroku container:push web --app preview-muxumuxu",
-    "deploy-all": "npm run deploy; npm run deploy-preview"
+    "deploy": "heroku container:push web --app muxumuxu"
   },
   "dependencies": {
     "@nuxtjs/component-cache": "^1.1.1",
