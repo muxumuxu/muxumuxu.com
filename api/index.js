@@ -4,7 +4,7 @@ import { default as parsePage } from './parse-page'
 
 const maxAge = process.env.NODE_ENV === 'production'
   ? 1000 * 120
-  : 1000 * 10
+  : 1000 * 1
 
 const SPACE_ID = process.env.CONTENTFUL_SPACE_ID
 const ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN
