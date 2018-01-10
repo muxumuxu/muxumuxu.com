@@ -8,13 +8,6 @@
 
 2. Créer un fichier `/api/parser/image-carousel.js` qui servira à parser le contenu de cette nouvelle section.
 
-3. Référencer ce fichier dans `/api/parser/parser-mapping.js`, et conditionner l'application du parsing sur l'id contentful (`imageCarouselSection`)
+3. Créer le composant Vue `/components/image-carousel.vue`, les données Contentful seront directement passées via la props `data`.
 
-4. Créer le composant Vue `/components/image-carousel.vue`, les données Contentful seront directement passées via la props `data`.
-
-5. Référencer ce dernier dans `/pages/_locale/_page.vue`
-    - L'importer
-    - L'ajouter dans `components`
-    - Ajouter au mapping
-        - Key: Contentful Component ID (`imageCarouselSection`)
-        - Value: Component Name (`image-carousel`)
+4. Référencer le parser et le composant dans `/api/components-mapping.js`, et conditionner l'application du parsing sur l'id contentful (`imageCarouselSection`)

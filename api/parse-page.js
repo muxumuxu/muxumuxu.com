@@ -1,7 +1,7 @@
-import parseHead from './head'
-import { default as componentsMapping } from '../components-mapping'
+import parseHead from './parser/head'
+import { default as componentsMapping } from './components-mapping'
 
-const parsePage = pageEntry => {
+export default (pageEntry) => {
   const head = parseHead(pageEntry.fields.head) // Pages must have at least a 'head'
   const sections = pageEntry.fields.sections.reduce((acc, curr) => {
     const id = curr.sys.contentType.sys.id
@@ -12,5 +12,3 @@ const parsePage = pageEntry => {
   }, [])
   return { head, sections }
 }
-
-export { parsePage }

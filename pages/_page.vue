@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import Separator from '@/components/separator'
+import { default as componentsMapping } from '@/api/components-mapping'
+import _ from 'lodash'
 
 export default {
   asyncData ({ store, route, redirect }) {
@@ -17,18 +18,15 @@ export default {
   head () {
     return { ...this.head, __dangerouslyDisableSanitizers: ['script'] }
   },
-  components: {
-    Separator
-  },
+  components: componentsMapping
+    .reduce((acc, curr) => ({ ...acc, [curr.componentName]: curr.component }), {}),
   methods: {
     getComponentName (section) {
-      const mapping = {
-        separator: 'separator'
-      }
-      if (!mapping[section.id] && process.env.NODE_ENV !== 'production') {
+      const matched = componentsMapping.find(mapping => mapping.contentfulId === section.id)
+      if (!matched && process.env.NODE_ENV !== 'production') {
         console.log('Missing component =>', section.id)
       }
-      return mapping[section.id]
+      return _.kebabCase(matched.componentName)
     }
   }
 }

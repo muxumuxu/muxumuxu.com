@@ -1,14 +1,22 @@
-import contentful from './contentful'
+import * as contentful from 'contentful'
 import memoizee from 'memoizee'
-import { parsePage } from './parser'
+import { default as parsePage } from './parse-page'
 
 const maxAge = process.env.NODE_ENV === 'production'
   ? 1000 * 120
   : 1000 * 10
 
+const SPACE_ID = process.env.CONTENTFUL_SPACE_ID
+const ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN
+
+const contentfulClient = contentful.createClient({
+  space: `${SPACE_ID}`,
+  accessToken: `${ACCESS_TOKEN}`
+})
+
 /* Fetch a all record of a specific contentful content type */
 const fetchContentType = memoizee((contentTypeId, locale = 'en', include = 4) => {
-  return contentful
+  return contentfulClient
     .getEntries({ content_type: contentTypeId, locale, include })
     .then(response => response.items)
 }, { maxAge })
