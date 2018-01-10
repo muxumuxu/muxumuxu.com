@@ -1,4 +1,4 @@
-# payfit.com
+# muxumuxu.com
 
 This project host the source code of the [muxumuu.com](muxumuxu.com) website.
 
@@ -101,7 +101,7 @@ The documentation is now live [here](https://muxumuxu.github.io/muxumuxu.com/).
 
 ## Deployment
 
-### Main application (PayFit website)
+### Heroku
 
 Before you need to ensure you have added a git remote to the heroku project.
 It push the docker image on Heroku.

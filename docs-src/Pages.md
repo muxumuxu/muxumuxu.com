@@ -1,6 +1,6 @@
 # Pages
 
-L'ajout de nouvelles pages au site [payfit.com](payfit.com) se fait de la manière suivante.
+L'ajout de nouvelles pages au site se fait de la manière suivante.
 
 Depuis Contentful, depuis l'onglet __Content__, il faut créer une nouvelle __Entry__ de type __Page Container__.
 
