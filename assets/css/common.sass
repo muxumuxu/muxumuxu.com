@@ -22,9 +22,38 @@ body
   background: $white
   font-family: 'Roboto', sans-serif
 
+// Texts
+
+h1
+  font-size: 32px
+  line-height: 44px
+
+p
+  font-size: 18px
+  line-height: 28px
+
+// Links
 
 a
   text-decoration: none
+  color: $black
+  font-size: 18px
+
+.underlined
+  padding-bottom: 10px
+  border-bottom: 1px solid $muxu-green
+
+  &::after
+    content: '→'
+    margin-left: 5px
+    transition: .3s margin ease-in-out
+
+  &:hover
+
+    &::after
+      margin-left: 20px
+
+// Layout
 
 .flex-row
   display: flex
@@ -57,3 +86,4 @@ a
 .wrapper
   max-width: 980px
   margin: 0 auto
+  padding: 100px 20px

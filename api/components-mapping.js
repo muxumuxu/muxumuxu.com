@@ -4,6 +4,9 @@
 import Navigation from '@/components/navigation'
 import parseNavigation from './parser/navigation'
 
+import HomeCustomers from '@/components/home-customers'
+import parseHomeCustomers from './parser/home-customers'
+
 import ImageBanner from '@/components/image-banner'
 import parseImageBanner from './parser/image-banner'
 
@@ -23,6 +26,7 @@ import parseSeparator from './parser/separator'
 */
 export default [
   { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation },
+  { contentfulId: 'homeCustomersSection', parser: parseHomeCustomers, componentName: 'HomeCustomers', component: HomeCustomers },
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
   { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator }
 ]

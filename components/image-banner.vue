@@ -20,7 +20,6 @@ export default {
 
 a
   color: $white
-  font-size: 50px
   font-weight: 300
   display: block
   text-align: center
@@ -30,7 +29,10 @@ a
   display: block
   padding: 170px 0
   transition: 0.3s all
-  line-height: 61px
+
+  /deep/ p
+    font-size: 50px
+    line-height: 61px
 
   &:hover
     background: rgba(0, 0, 0, 0.75)

@@ -22,6 +22,6 @@ export default {
   padding: 70px 20px
 
 a
-  color: $grey
+  color: $normal-grey
   margin-left: 25px
 </style>
