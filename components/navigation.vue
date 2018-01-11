@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper flex-row space-between">
+  <div class="wrapper flex-row space-between align-center">
     <image-hi-res-contentful :data="data.logo" />
     <div>
       <router-link v-for="link in data.links" :key="link.url" :to="link.url">

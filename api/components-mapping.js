@@ -4,6 +4,9 @@
 import Navigation from '@/components/navigation'
 import parseNavigation from './parser/navigation'
 
+import ImageBanner from '@/components/image-banner'
+import parseImageBanner from './parser/image-banner'
+
 import Separator from '@/components/separator'
 import parseSeparator from './parser/separator'
 
@@ -19,6 +22,7 @@ import parseSeparator from './parser/separator'
 ** ]
 */
 export default [
-  { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator },
-  { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation }
+  { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation },
+  { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
+  { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator }
 ]
