@@ -24,4 +24,5 @@ export default {
 a
   color: $normal-grey
   margin-left: 25px
+  font-size: 16px
 </style>
