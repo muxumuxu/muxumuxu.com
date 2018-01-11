@@ -13,6 +13,9 @@ import parseImageBanner from './parser/image-banner'
 import Separator from '@/components/separator'
 import parseSeparator from './parser/separator'
 
+import FooterSection from '@/components/footer-section'
+import parseFooterSection from './parser/footer-section'
+
 /*
 ** - Mapping is organized this way
 ** [
@@ -28,5 +31,6 @@ export default [
   { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation },
   { contentfulId: 'homeCustomersSection', parser: parseHomeCustomers, componentName: 'HomeCustomers', component: HomeCustomers },
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
-  { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator }
+  { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator },
+  { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
