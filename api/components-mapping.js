@@ -22,6 +22,9 @@ import parseThreeColumnList from './parser/three-column-list'
 import TwoColumn from '@/components/two-column'
 import parseTwoColumn from './parser/two-column'
 
+import ImageGrid from '@/components/image-grid'
+import parseImageGrid from './parser/image-grid'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -44,5 +47,6 @@ export default [
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
   { contentfulId: 'threeColumnListSection', parser: parseThreeColumnList, componentName: 'ThreeColumnList', component: ThreeColumnList },
   { contentfulId: 'twoColumnSection', parser: parseTwoColumn, componentName: 'TwoColumn', component: TwoColumn },
+  { contentfulId: 'imageGridSection', parser: parseImageGrid, componentName: 'ImageGrid', component: ImageGrid },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
