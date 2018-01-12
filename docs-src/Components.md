@@ -8,3 +8,4 @@
 | Image Banner            | `image-banner`                | ![image-banner](images/image-banner.png)                    |--------------|
 | Three Column List       | `three-column-list`           | ![three-column-list](images/three-column-list.png)          |--------------|
 | Two column              | `two-column`                  | ![two-column](images/two-column.png)                        |--------------|
+| Image Grid              | `image-grid`                  | ![image-grid](images/image-grid.png)                        | 440x440      |
