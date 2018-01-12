@@ -2,16 +2,32 @@
   <div class="wrapper">
     <div class="title" v-html="convertMarkdownToHTML(data.title)"></div>
     <image-hi-res-contentful class="illustration" :data="data.illustration" />
-    <p class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
+    <p @click="showVideo()" class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
+    <video-overlay v-if="showingVideo" :url="data.videoUrl" :onClose="closeVideo" />
   </div>
 </template>
 
 <script>
 import markdownMixin from '@/mixins/markdown-mixin'
+import VideoOverlay from '@/components/video-overlay'
 
 export default {
   props: ['data'],
-  mixins: [markdownMixin]
+  data () {
+    return {
+      showingVideo: false
+    }
+  },
+  components: { VideoOverlay },
+  mixins: [markdownMixin],
+  methods: {
+    showVideo () {
+      this.showingVideo = true
+    },
+    closeVideo () {
+      this.showingVideo = false
+    }
+  }
 }
 </script>
 
@@ -38,11 +54,14 @@ export default {
   padding: 5px 0 5px 40px
   cursor: pointer
   margin-top: 40px
+
   span
     font-size: 16px
     color: rgba(0,0,0,0.3)
 
-    &:hover
+  &:hover
+
+    span
       color: $muxu-green
 
 </style>
