@@ -4,7 +4,7 @@
     <div class="sections flex-row">
       <div class="section" v-for="list in data.lists" :key="list.title">
         <h4 v-if="list.title">{{list.title}}</h4>
-        <p v-for="item in list.items">{{item}}</p>
+        <p v-for="item in list.items" :key="list.item">{{item}}</p>
       </div>
     </div>
   </div>
@@ -21,11 +21,8 @@ export default {
 h2
   margin-bottom: 30px
 
-h4
-  margin-bottom: 10px
-
 .section
-  width: 30%
+  width: 32%
   padding-right: 20px
 
   p

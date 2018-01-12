@@ -19,6 +19,9 @@ import parseImageBanner from './parser/image-banner'
 import ThreeColumnList from '@/components/three-column-list'
 import parseThreeColumnList from './parser/three-column-list'
 
+import TwoColumn from '@/components/two-column'
+import parseTwoColumn from './parser/two-column'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -40,5 +43,6 @@ export default [
   { contentfulId: 'homeHeroSection', parser: parseHomeHero, componentName: 'HomeHero', component: HomeHero },
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
   { contentfulId: 'threeColumnListSection', parser: parseThreeColumnList, componentName: 'ThreeColumnList', component: ThreeColumnList },
+  { contentfulId: 'twoColumnSection', parser: parseTwoColumn, componentName: 'TwoColumn', component: TwoColumn },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
