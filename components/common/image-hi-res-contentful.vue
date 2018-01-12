@@ -1,5 +1,7 @@
 <template>
+  <embed :src="lowResURL" type="image/svg+xml" v-if="isSVG" />
   <img
+    v-else
     :class="imageClass"
     :key="lowResURL"
     :src="lowResURL"
@@ -59,6 +61,9 @@ export default {
         return ['animated', this.animationType]
       }
       return {}
+    },
+    isSVG () {
+      return this.data.src.indexOf('.svg') > -1
     }
   },
   methods: {
