@@ -1,8 +1,6 @@
 <template>
-  <div :style="{ 'background-color': data.backgroundColor }">
-    <div class="wrapper" :style="{ 'background-color': data.backgroundColor }">
-      <div class="separator" :style="{ 'color': data.strokeColor }"></div>
-    </div>
+  <div class="wrapper" :style="{ 'background-color': data.backgroundColor }">
+    <div class="separator" :style="{ 'background-color': data.strokeColor }"></div>
   </div>
 </template>
 
@@ -16,7 +14,7 @@ export default {
 @import '../assets/css/variables.sass'
 
 .wrapper
-  padding: 0 30px
+  padding: 0 20px
 
 .separator
   width: 100%
