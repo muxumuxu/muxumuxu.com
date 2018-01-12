@@ -5,160 +5,85 @@
   -moz-osx-font-smoothing: grayscale
   outline: none
 
+::-moz-selection
+  color: #fff
+  color: rgba(255, 255, 255, 0.85)
+  background: $muxu-green
+
+::selection
+  color: #fff
+  color: rgba(255, 255, 255, 0.85)
+  background: $muxu-green
+
 html
   background: $muxu-green
 
 body
+  background: $white
   font-family: 'Roboto', sans-serif
-  background-color: #f2f2f2
 
-h1
-  font-size: 50px
-  line-height: 56px
-  color: $black
-  font-weight: 700
+// Texts
 
-h2
-  font-size: 36px
-  line-height: 42px
-  color: $black
-  font-weight: 500
+h1, h2
+  font-size: 32px
+  line-height: 44px
+  font-weight: 300
 
 h3
-  font-size: 32px
-  line-height: 38px
-  color: $black
+  font-size: 16px
   font-weight: 500
 
 h4
-  font-size: 21px
-  line-height: 31px
-  font-weight: 300
-
-h5
-  font-size: 13px
-  line-height: 15px
-  font-weight: 700
-  letter-spacing: 1px
-  text-transform: uppercase
+  font-size: 14px
+  opacity: 0.5
 
 p
-  font-size: 16px
-  line-height: 24px
-  color: $black
-  font-weight: 400
+  font-size: 18px
+  line-height: 28px
 
-blockquote
-  font-size: 13px
-  line-height: 20px
-  color: $black
-  font-weight: 400
-  font-style: italic
-
-input
-  font-family: 'Roboto', sans-serif
-  -webkit-appearance: none
-
-input[type=text], input[type=email], input[type=tel], input[type=number]
-  border: rgba(0,0,0,0.1) solid 1px
-  border-radius: 4px
-  padding: 16px 18px 18px
-  font-size: 16px
-  color: $black
-  box-sizing: border-box
-  &::placeholder
-    opacity: 0.3
-    color: black
-  &:focus
-    border: 1px solid #0062D1
-  &.input-error
-    border: 1px solid $red
-
-// buttons
+// Links
 
 a
   text-decoration: none
-  &.link
-    color: $normal-blue
-    &.underlined
-      border-bottom: 1px solid $normal-blue
-      padding-bottom: 5px
-      &:hover
-        border-bottom: 1px solid #004593
-    &:hover
-      color: #004593
+  color: $black
+  font-size: 18px
 
-button
-  border: 0
-  background: transparent
-  cursor: pointer
-  padding: 0
+.underlined
+  padding-bottom: 10px
+  border-bottom: 1px solid $muxu-green
+  display: inline-block
 
-.primary
-  color: $white
-  text-transform: uppercase
-  letter-spacing: 1px
-  background-color: $normal-blue
-  font-weight: 700
-  padding: 19px 20px
-  font-size: 13px
-  border: 0
-  border-radius: 4px
-  cursor: pointer
+  &::after
+    content: '→'
+    margin-left: 5px
+    transition: .3s margin ease-in-out
+
   &:hover
-    background-color: #0056B8
-  &:active
-    background-color: #004A9E
 
-.secondary
-  text-transform: uppercase
-  font-weight: 700
-  font-size: 13px
-  letter-spacing: 1px
-  padding: 15px 20px
-  background: $light-blue
-  border-radius: 4px
-  color: $normal-blue
-  &:hover
-    background-color: #DBEDFF
-  &:active
-    background-color: #CCE6FF
+    &::after
+      margin-left: 20px
 
-.section-more
-  padding: 15px 20px
-  border: 1px solid #CCE6FF
-  border-radius: 4px
-
-//
+// Layout
 
 .flex-row
   display: flex
   flex-direction: row
+
 .flex-column
   display: flex
   flex-direction: column
+
 .space-between
   justify-content: space-between
+
 .space-around
   justify-content: space-around
+
 .center
   justify-content: center
+
 .align-center
   align-items: center
-
-.text-centered
-  text-align: center
-  margin: auto
-  max-width: 800px
-
-  h4
-    margin-top: 10px
-
-.label-error
-  color: $red
-  display: block
-  font-size: 13px
-  margin-top: 5px
 
 .visible
   display: block
@@ -167,26 +92,8 @@ button
   display: none
 
 .separator
-  background: $light-blue
-  height: 1px
-  width: 100%
 
 .wrapper
-  max-width: 1140px
+  max-width: 980px
   margin: 0 auto
   padding: 100px 20px
-
-// Pricing slider
-
-.vue-slider-component .vue-slider-process
-  z-index: 0
-
-.vue-slider-component .vue-slider-dot
-  box-shadow: 0px 0.5px 2px 1px rgba(0,0,0,.32)
-
-//
-
-@media screen and (max-width: 1050px)
-
-  .wrapper
-    padding: 60px 20px
