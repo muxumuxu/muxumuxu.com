@@ -7,7 +7,7 @@
       <div class="location flex-row">
         <span v-for="location in data.locations">
           {{location.title}}
-          <image-hi-res-contentful :key="location.image" :data="location.image" />
+          <image-hi-res-contentful :data="location.image" />
         </span>
       </div>
     </div>
