@@ -7,3 +7,4 @@
 | Home Customers          | `home-customers`              | ![home-customers](images/home-customers.png)                |--------------|
 | Image Banner            | `image-banner`                | ![image-banner](images/image-banner.png)                    |--------------|
 | Three Column List       | `three-column-list`           | ![three-column-list](images/three-column-list.png)          |--------------|
+| Two column              | `two-column`                  | ![two-column](images/two-column.png)                        |--------------|
