@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper flex-row space-between align-center">
-    <router-link to="/">
+    <router-link to="/" style="width: 123px; height: 22px">
       <image-hi-res-contentful :data="data.logo" />
     </router-link>
     <div>

@@ -1,5 +1,5 @@
 <template>
-  <embed :src="lowResURL" type="image/svg+xml" v-if="isSVG" />
+  <object :data="lowResURL" type="image/svg+xml" v-if="useObject" />
   <img
     v-else
     :class="imageClass"
@@ -17,6 +17,7 @@ export default {
       type: Object,
       required: true
     },
+    interactive: false,
     width: Number,
     height: Number,
     animated: {
@@ -62,8 +63,8 @@ export default {
       }
       return {}
     },
-    isSVG () {
-      return this.data.src.indexOf('.svg') > -1
+    useObject () {
+      return this.interactive && this.data.src.indexOf('.svg') > -1
     }
   },
   methods: {
