@@ -4,6 +4,9 @@
 import Navigation from '@/components/navigation'
 import parseNavigation from './parser/navigation'
 
+import Separator from '@/components/separator'
+import parseSeparator from './parser/separator'
+
 import HomeHero from '@/components/home-hero'
 import parseHomeHero from './parser/home-hero'
 
@@ -13,8 +16,8 @@ import parseHomeCustomers from './parser/home-customers'
 import ImageBanner from '@/components/image-banner'
 import parseImageBanner from './parser/image-banner'
 
-import Separator from '@/components/separator'
-import parseSeparator from './parser/separator'
+import ThreeColumnList from '@/components/three-column-list'
+import parseThreeColumnList from './parser/three-column-list'
 
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
@@ -32,9 +35,10 @@ import parseFooterSection from './parser/footer-section'
 */
 export default [
   { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation },
+  { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator },
   { contentfulId: 'homeCustomersSection', parser: parseHomeCustomers, componentName: 'HomeCustomers', component: HomeCustomers },
   { contentfulId: 'homeHeroSection', parser: parseHomeHero, componentName: 'HomeHero', component: HomeHero },
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
-  { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator },
+  { contentfulId: 'threeColumnListSection', parser: parseThreeColumnList, componentName: 'ThreeColumnList', component: ThreeColumnList },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
