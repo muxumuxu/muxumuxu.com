@@ -7,14 +7,14 @@
       <div class="location flex-row">
         <span v-for="location in data.locations">
           {{location.title}}
-          <image-hi-res-contentful :data="location.image" />
+          <image-hi-res-contentful :data="location.image" :width="28" />
         </span>
       </div>
     </div>
     <div class="section">
       <h3>{{data.moreTitle}}</h3>
       <ul>
-        <li v-for="item in data.moreItems" :style="{'background': 'url(' + item.image.src + ') no-repeat left 2px', 'background-size': '28px 28px'}">
+        <li v-for="item in data.moreItems" :key="item.link.title" :style="{'background': 'url(' + item.image.src + ') no-repeat left 2px', 'background-size': '28px 28px'}" :width="28">
           <a class="item" :href="item.link.url">
           {{item.link.title}}
           </a>
