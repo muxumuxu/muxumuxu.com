@@ -24,6 +24,7 @@ h2
   font-size: 25px
   line-height: 33px
   font-weight: 400
+  width: 380px
 
 p
   margin-bottom: 20px
