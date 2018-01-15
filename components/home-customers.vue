@@ -1,6 +1,8 @@
 <template>
   <div class="wrapper">
-    <!-- <image-hi-res-contentful v-for="logo in data.logos" :key="logo.src" :data="logo" /> -->
+    <div class="logos flex-row space-between">
+      <image-hi-res-contentful v-for="logo in data.logos" :key="logo.src" :data="logo" class="logo" />
+    </div>
     <div class="content" v-html="convertMarkdownToHTML(data.description)"></div>
     <router-link class="underlined" :to="data.link.url">{{data.link.title}}</router-link>
   </div>
@@ -17,6 +19,12 @@ export default {
 
 <style scoped lang="sass">
 @import '../assets/css/variables.sass'
+
+.logos
+  margin-bottom: 30px
+
+.logo
+  height: 50px
 
 .content
   columns: 2
