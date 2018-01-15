@@ -31,4 +31,5 @@ p
 
 .right
   width: 550px
+  padding-left: 20px
 </style>

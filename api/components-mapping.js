@@ -31,6 +31,9 @@ import parseImageGrid from './parser/image-grid'
 import BlogArticleLink from '@/components/blog-article-link'
 import parseBlogArticleLink from './parser/blog-article-link'
 
+import JobList from '@/components/job-list'
+import parseJobList from './parser/job-list'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -56,5 +59,6 @@ export default [
   { contentfulId: 'twoColumnSection', parser: parseTwoColumnDescription, componentName: 'TwoColumnDescription', component: TwoColumnDescription },
   { contentfulId: 'imageGridSection', parser: parseImageGrid, componentName: 'ImageGrid', component: ImageGrid },
   { contentfulId: 'blogArticleLinkSection', parser: parseBlogArticleLink, componentName: 'BlogArticleLink', component: BlogArticleLink },
+  { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
