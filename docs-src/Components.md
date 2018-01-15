@@ -12,5 +12,6 @@
 | Blog Article Link       | `blog-article-link`           | ![blog-article-link](images/blog-article-link.png)          |--------------|
 | Partners Grid           | `partners-grid`               | ![partners-grid](images/partners-grid.png)                  | 50xauto      |
 | Logos List              | `logos-list`                  | ![logos-list](images/logos-list.png)                        | 40xauto      |
+| Two Column List         | `two-column-list`             | ![two-column-list](images/two-column-list.png)              |--------------|
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
 | Title                   | `title`                       | ![title](images/title.png)                                  |--------------|
