@@ -3,10 +3,13 @@
 | Contentful Name         | Component Name                | Component Image                                             | Image (WxH)  |
 |:----------------------- |:-----------------------------:|:-----------------------------------------------------------:|--------------|
 | Home Hero               | `home-hero`                   | ![home-hero](images/home-hero.png)                          |--------------|
-| Home Customers          | `home-customers`              | ![home-customers](images/home-customers.png)                |--------------|
+| Home Customers          | `home-customers`              | ![home-customers](images/home-customers.png)                | 40xauto      |
 | Image Banner            | `image-banner`                | ![image-banner](images/image-banner.png)                    |--------------|
 | Three Column List       | `three-column-list`           | ![three-column-list](images/three-column-list.png)          |--------------|
 | Two column Description  | `two-column-description`      | ![two-column-description](images/two-column-description.png)|--------------|
 | Image Grid              | `image-grid`                  | ![image-grid](images/image-grid.png)                        | 440x440      |
+| Job List                | `job-list`                    | ![job-list](images/job-list.png)                            |--------------|
+| Blog Article Link       | `blog-article-link`           | ![blog-article-link](images/blog-article-link.png)          |--------------|
+| Partners Grid           | `partners-grid`               | ![partners-grid](images/partners-grid.png)                  | 50xauto      |
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
 | Title                   | `title`                       | ![title](images/title.png)                                  |--------------|
