@@ -15,9 +15,7 @@
       <h3>{{data.moreTitle}}</h3>
       <ul>
         <li v-for="item in data.moreItems" :key="item.link.title" :style="{'background': 'url(' + item.image.src + ') no-repeat left 2px', 'background-size': '28px 28px'}" :width="28">
-          <a class="item" :href="item.link.url">
-          {{item.link.title}}
-          </a>
+          <hyper-link class="item" :data="item.link" />
         </li>
       </ul>
     </div>
