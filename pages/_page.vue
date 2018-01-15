@@ -1,6 +1,6 @@
 <template>
   <div>
-    <component v-for="section in sections" :key="section.id" :is="getComponentName(section)" :data="section" />
+    <component v-for="(section, index) in sections" :key="`${section.id}-${index}`" :is="getComponentName(section)" :data="section" />
   </div>
 </template>
 
