@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="logos flex-row space-between">
-      <image-hi-res-contentful v-for="logo in data.logos" :key="logo.src" :data="logo" class="logo" />
+      <image-hi-res-contentful v-for="logo in data.logos" :key="logo.src" :data="logo" class="logo" :height="40" />
     </div>
     <div class="content" v-html="convertMarkdownToHTML(data.description)"></div>
     <router-link class="underlined" :to="data.link.url">{{data.link.title}}</router-link>
@@ -24,7 +24,7 @@ export default {
   margin-bottom: 30px
 
 .logo
-  height: 50px
+  height: 40px
 
 .content
   columns: 2

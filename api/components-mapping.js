@@ -34,6 +34,9 @@ import parseBlogArticleLink from './parser/blog-article-link'
 import JobList from '@/components/job-list'
 import parseJobList from './parser/job-list'
 
+import PartnersGrid from '@/components/partners-grid'
+import parsePartnersGrid from './parser/partners-grid'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -60,5 +63,6 @@ export default [
   { contentfulId: 'imageGridSection', parser: parseImageGrid, componentName: 'ImageGrid', component: ImageGrid },
   { contentfulId: 'blogArticleLinkSection', parser: parseBlogArticleLink, componentName: 'BlogArticleLink', component: BlogArticleLink },
   { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
+  { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
