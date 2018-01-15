@@ -11,5 +11,6 @@
 | Job List                | `job-list`                    | ![job-list](images/job-list.png)                            |--------------|
 | Blog Article Link       | `blog-article-link`           | ![blog-article-link](images/blog-article-link.png)          |--------------|
 | Partners Grid           | `partners-grid`               | ![partners-grid](images/partners-grid.png)                  | 50xauto      |
+| Logos List              | `logos-list`                  | ![logos-list](images/logos-list.png)                        | 40xauto      |
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
 | Title                   | `title`                       | ![title](images/title.png)                                  |--------------|
