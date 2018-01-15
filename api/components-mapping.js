@@ -40,6 +40,9 @@ import parsePartnersGrid from './parser/partners-grid'
 import LogosList from '@/components/logos-list'
 import parseLogosList from './parser/logos-list'
 
+import TwoColumnList from '@/components/two-column-list'
+import parseTwoColumnList from './parser/two-column-list'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -68,5 +71,6 @@ export default [
   { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
   { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
   { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
+  { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
