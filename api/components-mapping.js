@@ -31,14 +31,17 @@ import parseTwoColumnDescription from './parser/two-column-description'
 import ImageGrid from '@/components/image-grid'
 import parseImageGrid from './parser/image-grid'
 
+import PartnersGrid from '@/components/partners-grid'
+import parsePartnersGrid from './parser/partners-grid'
+
+import PortfolioGrid from '@/components/portfolio-grid'
+import parsePortfolioGrid from './parser/portfolio-grid'
+
 import BlogArticleLink from '@/components/blog-article-link'
 import parseBlogArticleLink from './parser/blog-article-link'
 
 import JobList from '@/components/job-list'
 import parseJobList from './parser/job-list'
-
-import PartnersGrid from '@/components/partners-grid'
-import parsePartnersGrid from './parser/partners-grid'
 
 import LogosList from '@/components/logos-list'
 import parseLogosList from './parser/logos-list'
@@ -83,6 +86,7 @@ export default [
   { contentfulId: 'blogArticleLinkSection', parser: parseBlogArticleLink, componentName: 'BlogArticleLink', component: BlogArticleLink },
   { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
   { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
+  { contentfulId: 'portfolioGridSection', parser: parsePortfolioGrid, componentName: 'PortfolioGrid', component: PortfolioGrid },
   { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
   { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
   { contentfulId: 'twoColumnLinksSection', parser: parseTwoColumnLinks, componentName: 'TwoColumnLinks', component: TwoColumnLinks },
