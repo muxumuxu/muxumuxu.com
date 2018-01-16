@@ -3,21 +3,21 @@
     <h2>{{data.title}}</h2>
     <div class="projects">
       <div class="line flex-row space-between">
-        <div class="project" v-for="project in data.projects2" :key="project.title">
+        <div class="project" v-for="project in data.projects2" :key="project.title" @click="showProject(project)">
           <image-hi-res-contentful :data="project.image" :height="220" />
           <h5>{{project.title}}</h5>
           <h4>{{project.subtitle}}</h4>
         </div>
       </div>
       <div class="line flex-row space-between">
-        <div class="project" v-for="project in data.projects3" :key="project.title">
+        <div class="project" v-for="project in data.projects3" :key="project.title" @click="showProject(project)">
           <image-hi-res-contentful :data="project.image" :height="220" />
           <h5>{{project.title}}</h5>
           <h4>{{project.subtitle}}</h4>
         </div>
       </div>
-      <div class="line flex-row space-between">
-        <div class="project" v-if="data.projects4" v-for="project in data.projects4" :key="project.title">
+      <div class="line flex-row space-between" v-if="data.projects4">
+        <div class="project" v-for="project in data.projects4" :key="project.title" @click="showProject(project)">
           <image-hi-res-contentful :data="project.image" :height="220" />
           <h5>{{project.title}}</h5>
           <h4>{{project.subtitle}}</h4>
@@ -29,7 +29,12 @@
 
 <script>
 export default {
-  props: ['data']
+  props: ['data'],
+  methods: {
+    showProject (project) {
+      window.open(project.link.url)
+    }
+  }
 }
 </script>
 
@@ -45,5 +50,8 @@ h5
 
 .line
   margin-top: 40px
+
+.project
+  cursor: pointer
 
 </style>
