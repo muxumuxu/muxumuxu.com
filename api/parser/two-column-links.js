@@ -1,4 +1,6 @@
-const parseTwoColumnList = entry => {
+import { parseLinkEntry } from './utils'
+
+const parseTwoColumnLinks = entry => {
   const title = entry.fields.title
   const description = {
     title: entry.fields.description.fields.title,
@@ -6,9 +8,9 @@ const parseTwoColumnList = entry => {
   }
   const list = {
     title: entry.fields.list.fields.title,
-    items: entry.fields.list.fields.items
+    links: entry.fields.list.fields.links.map(parseLinkEntry)
   }
   return { title, description, list }
 }
 
-export default parseTwoColumnList
+export default parseTwoColumnLinks

@@ -43,6 +43,9 @@ import parseLogosList from './parser/logos-list'
 import TwoColumnList from '@/components/two-column-list'
 import parseTwoColumnList from './parser/two-column-list'
 
+import TwoColumnLinks from '@/components/two-column-links'
+import parseTwoColumnLinks from './parser/two-column-links'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -72,5 +75,6 @@ export default [
   { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
   { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
   { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
+  { contentfulId: 'twoColumnLinksSection', parser: parseTwoColumnLinks, componentName: 'TwoColumnLinks', component: TwoColumnLinks },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
