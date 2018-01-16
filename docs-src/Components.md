@@ -13,5 +13,6 @@
 | Partners Grid           | `partners-grid`               | ![partners-grid](images/partners-grid.png)                  | 50xauto      |
 | Logos List              | `logos-list`                  | ![logos-list](images/logos-list.png)                        | 40xauto      |
 | Two Column List         | `two-column-list`             | ![two-column-list](images/two-column-list.png)              |--------------|
+| Two Column Links        | `two-column-links`            | ![two-column-links](images/two-column-links.png)            |--------------|
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
 | Title                   | `title`                       | ![title](images/title.png)                                  |--------------|
