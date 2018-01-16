@@ -33,7 +33,11 @@ const config = {
       { hid: 'twitter:widgets:border-color', property: 'twitter:widgets:border-color', content: '#33CC33' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preload', href: '/fluffy/fluffy.min.css', as: 'style', onload: "this.rel='stylesheet'" }
+    ],
+    script: [
+      { type: 'text/javascript', id: 'fluffy', async: true, defer: true, src: '/fluffy/fluffy.min.js' }
     ]
   },
   modules: [

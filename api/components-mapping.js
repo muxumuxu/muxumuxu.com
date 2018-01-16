@@ -49,6 +49,9 @@ import parseTwoColumnList from './parser/two-column-list'
 import TwoColumnLinks from '@/components/two-column-links'
 import parseTwoColumnLinks from './parser/two-column-links'
 
+import ImageCarousel from '@/components/image-carousel'
+import parseImageCarousel from './parser/image-carousel'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -80,5 +83,6 @@ export default [
   { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
   { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
   { contentfulId: 'twoColumnLinksSection', parser: parseTwoColumnLinks, componentName: 'TwoColumnLinks', component: TwoColumnLinks },
+  { contentfulId: 'imageCarouselSection', parser: parseImageCarousel, componentName: 'ImageCarousel', component: ImageCarousel },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
