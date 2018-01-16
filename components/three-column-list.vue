@@ -2,9 +2,9 @@
   <div class="wrapper">
     <h2>{{data.title}}</h2>
     <div class="sections flex-row">
-      <div class="section" v-for="list in data.lists" :key="list.title">
+      <div class="section" v-for="(list, index) in data.lists" :key="`three-column-div-${data.title}-${index}`">
         <h4 v-if="list.title">{{list.title}}</h4>
-        <p v-for="item in list.items" :key="list.item">{{item}}</p>
+        <p v-for="item in list.items"  :key="`three-column-p-${item}-${index}`">{{item}}</p>
       </div>
     </div>
   </div>

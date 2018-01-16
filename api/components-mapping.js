@@ -10,6 +10,9 @@ import parseSeparator from './parser/separator'
 import TitleSection from '@/components/title-section'
 import parseTitleSection from './parser/title-section'
 
+import DescriptionSection from '@/components/description-section'
+import parseDescriptionSection from './parser/description-section'
+
 import HomeHero from '@/components/home-hero'
 import parseHomeHero from './parser/home-hero'
 
@@ -31,6 +34,27 @@ import parseImageGrid from './parser/image-grid'
 import BlogArticleLink from '@/components/blog-article-link'
 import parseBlogArticleLink from './parser/blog-article-link'
 
+import JobList from '@/components/job-list'
+import parseJobList from './parser/job-list'
+
+import PartnersGrid from '@/components/partners-grid'
+import parsePartnersGrid from './parser/partners-grid'
+
+import LogosList from '@/components/logos-list'
+import parseLogosList from './parser/logos-list'
+
+import TwoColumnList from '@/components/two-column-list'
+import parseTwoColumnList from './parser/two-column-list'
+
+import TwoColumnLinks from '@/components/two-column-links'
+import parseTwoColumnLinks from './parser/two-column-links'
+
+import TwoColumnImage from '@/components/two-column-image'
+import parseTwoColumnImage from './parser/two-column-image'
+
+import ImageCarousel from '@/components/image-carousel'
+import parseImageCarousel from './parser/image-carousel'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -49,6 +73,7 @@ export default [
   { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation },
   { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator },
   { contentfulId: 'titleSection', parser: parseTitleSection, componentName: 'TitleSection', component: TitleSection },
+  { contentfulId: 'descriptionSection', parser: parseDescriptionSection, componentName: 'DescriptionSection', component: DescriptionSection },
   { contentfulId: 'homeCustomersSection', parser: parseHomeCustomers, componentName: 'HomeCustomers', component: HomeCustomers },
   { contentfulId: 'homeHeroSection', parser: parseHomeHero, componentName: 'HomeHero', component: HomeHero },
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },
@@ -56,5 +81,12 @@ export default [
   { contentfulId: 'twoColumnSection', parser: parseTwoColumnDescription, componentName: 'TwoColumnDescription', component: TwoColumnDescription },
   { contentfulId: 'imageGridSection', parser: parseImageGrid, componentName: 'ImageGrid', component: ImageGrid },
   { contentfulId: 'blogArticleLinkSection', parser: parseBlogArticleLink, componentName: 'BlogArticleLink', component: BlogArticleLink },
+  { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
+  { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
+  { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
+  { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
+  { contentfulId: 'twoColumnLinksSection', parser: parseTwoColumnLinks, componentName: 'TwoColumnLinks', component: TwoColumnLinks },
+  { contentfulId: 'twoColumnImageSection', parser: parseTwoColumnImage, componentName: 'TwoColumnImage', component: TwoColumnImage },
+  { contentfulId: 'imageCarouselSection', parser: parseImageCarousel, componentName: 'ImageCarousel', component: ImageCarousel },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]

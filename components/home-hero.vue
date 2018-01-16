@@ -3,6 +3,7 @@
     <div class="title" v-html="convertMarkdownToHTML(data.title)"></div>
     <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" />
     <p @click="showVideo()" class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
+    <div class="border"></div>
     <video-overlay v-if="showingVideo" :url="data.videoUrl" :onClose="closeVideo" />
   </div>
 </template>
@@ -37,7 +38,14 @@ export default {
 .wrapper
   position: relative
   padding-bottom: 220px
-  box-shadow: inset 0 -1px 0 0 #EAEAEA
+  // box-shadow: inset 0 -1px 0 0 #EAEAEA
+
+.border
+  width: 100%
+  height: 1px
+  background: #EAEAEA
+  position: absolute
+  bottom: 0
 
 .title /deep/ p
   font-size: 32px
@@ -49,6 +57,7 @@ export default {
   position: absolute
   bottom: 0
   right: 0
+  z-index: 1
 
 .video-cta
   padding: 5px 0 5px 40px

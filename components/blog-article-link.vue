@@ -24,10 +24,12 @@ h2
   font-size: 25px
   line-height: 33px
   font-weight: 400
+  width: 380px
 
 p
   margin-bottom: 20px
 
 .right
   width: 550px
+  padding-left: 20px
 </style>

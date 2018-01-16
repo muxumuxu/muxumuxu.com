@@ -219,7 +219,7 @@
 <th style="text-align:left">Contentful Name</th>
 <th style="text-align:center">Component Name</th>
 <th style="text-align:center">Component Image</th>
-<th>Image (WxH)</th>
+<th>Image R (WxH)</th>
 </tr>
 </thead>
 <tbody>
@@ -233,12 +233,72 @@
 <td style="text-align:left">Home Customers</td>
 <td style="text-align:center"><code>home-customers</code></td>
 <td style="text-align:center"><img src="images/home-customers.png" alt="home-customers"></td>
-<td>--------------</td>
+<td>40xauto</td>
 </tr>
 <tr>
 <td style="text-align:left">Image Banner</td>
 <td style="text-align:center"><code>image-banner</code></td>
 <td style="text-align:center"><img src="images/image-banner.png" alt="image-banner"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Image Carousel</td>
+<td style="text-align:center"><code>image-carousel</code></td>
+<td style="text-align:center"><img src="images/image-carousel.png" alt="image-carousel"></td>
+<td>autox1020</td>
+</tr>
+<tr>
+<td style="text-align:left">Image Grid</td>
+<td style="text-align:center"><code>image-grid</code></td>
+<td style="text-align:center"><img src="images/image-grid.png" alt="image-grid"></td>
+<td>440x440</td>
+</tr>
+<tr>
+<td style="text-align:left">Job List</td>
+<td style="text-align:center"><code>job-list</code></td>
+<td style="text-align:center"><img src="images/job-list.png" alt="job-list"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Blog Article Link</td>
+<td style="text-align:center"><code>blog-article-link</code></td>
+<td style="text-align:center"><img src="images/blog-article-link.png" alt="blog-article-link"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Partners Grid</td>
+<td style="text-align:center"><code>partners-grid</code></td>
+<td style="text-align:center"><img src="images/partners-grid.png" alt="partners-grid"></td>
+<td>50xauto</td>
+</tr>
+<tr>
+<td style="text-align:left">Logos List</td>
+<td style="text-align:center"><code>logos-list</code></td>
+<td style="text-align:center"><img src="images/logos-list.png" alt="logos-list"></td>
+<td>40xauto</td>
+</tr>
+<tr>
+<td style="text-align:left">Two Column List</td>
+<td style="text-align:center"><code>two-column-list</code></td>
+<td style="text-align:center"><img src="images/two-column-list.png" alt="two-column-list"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Two Column Links</td>
+<td style="text-align:center"><code>two-column-links</code></td>
+<td style="text-align:center"><img src="images/two-column-links.png" alt="two-column-links"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Two Column Image</td>
+<td style="text-align:center"><code>two-column-image</code></td>
+<td style="text-align:center"><img src="images/two-column-image.png" alt="two-column-image"></td>
+<td>940xauto</td>
+</tr>
+<tr>
+<td style="text-align:left">Two column Description</td>
+<td style="text-align:center"><code>two-column-description</code></td>
+<td style="text-align:center"><img src="images/two-column-description.png" alt="two-column-description"></td>
 <td>--------------</td>
 </tr>
 <tr>
@@ -248,27 +308,21 @@
 <td>--------------</td>
 </tr>
 <tr>
-<td style="text-align:left">Two column Description</td>
-<td style="text-align:center"><code>two-column-description</code></td>
-<td style="text-align:center"><img src="images/two-column-description.png" alt="two-column-description"></td>
-<td>--------------</td>
-</tr>
-<tr>
-<td style="text-align:left">Image Grid</td>
-<td style="text-align:center"><code>image-grid</code></td>
-<td style="text-align:center"><img src="images/image-grid.png" alt="image-grid"></td>
-<td>440x440</td>
-</tr>
-<tr>
 <td style="text-align:left">Separator</td>
 <td style="text-align:center"><code>separator</code></td>
 <td style="text-align:center"><img src="images/separator.png" alt="separator"></td>
 <td>--------------</td>
 </tr>
 <tr>
-<td style="text-align:left">Title</td>
-<td style="text-align:center"><code>title</code></td>
-<td style="text-align:center"><img src="images/title.png" alt="title"></td>
+<td style="text-align:left">Title Section</td>
+<td style="text-align:center"><code>title-section</code></td>
+<td style="text-align:center"><img src="images/title-section.png" alt="title-section"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Description Section</td>
+<td style="text-align:center"><code>description-section</code></td>
+<td style="text-align:center"><img src="images/description-section.png" alt="description-section"></td>
 <td>--------------</td>
 </tr>
 </tbody>
@@ -316,7 +370,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Autres composants","level":"1.5","depth":1,"next":{"title":"Créer son composant","level":"1.6","depth":1,"path":"CreateComponent.md","ref":"CreateComponent.md","articles":[]},"previous":{"title":"Composants de navigation","level":"1.4","depth":1,"path":"Navigation.md","ref":"Navigation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Components.md","mtime":"2018-01-15T09:49:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T09:56:43.794Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Autres composants","level":"1.5","depth":1,"next":{"title":"Créer son composant","level":"1.6","depth":1,"path":"CreateComponent.md","ref":"CreateComponent.md","articles":[]},"previous":{"title":"Composants de navigation","level":"1.4","depth":1,"path":"Navigation.md","ref":"Navigation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Components.md","mtime":"2018-01-16T13:11:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-16T13:15:24.305Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
