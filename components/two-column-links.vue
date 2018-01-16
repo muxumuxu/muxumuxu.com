@@ -31,7 +31,7 @@ export default {
 @import '../assets/css/variables.sass'
 
 h2
-  max-width: 780px
+  max-width: 820px
   margin-bottom: 80px
 
 a
