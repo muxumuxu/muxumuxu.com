@@ -1,9 +1,7 @@
 <template>
   <div data-fluffy-container data-fluffy-options='{"showScrollbars": false}'>
     <div data-fluffy-content>
-      <image-hi-res-contentful
-        class="slider-image"
-        :data="data.image" />
+      <image-hi-res-contentful :data="data.image" />
     </div>
   </div>
 </template>
