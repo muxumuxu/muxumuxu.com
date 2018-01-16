@@ -15,4 +15,5 @@
 | Two Column List         | `two-column-list`             | ![two-column-list](images/two-column-list.png)              |--------------|
 | Two Column Links        | `two-column-links`            | ![two-column-links](images/two-column-links.png)            |--------------|
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
-| Title                   | `title`                       | ![title](images/title.png)                                  |--------------|
+| Title Section           | `title-section`               | ![title-section](images/title-section.png)                  |--------------|
+| Description Section     | `description-section`         | ![description-section](images/description-section.png)      |--------------|
