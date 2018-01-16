@@ -10,6 +10,9 @@ import parseSeparator from './parser/separator'
 import TitleSection from '@/components/title-section'
 import parseTitleSection from './parser/title-section'
 
+import DescriptionSection from '@/components/description-section'
+import parseDescriptionSection from './parser/description-section'
+
 import HomeHero from '@/components/home-hero'
 import parseHomeHero from './parser/home-hero'
 
@@ -64,6 +67,7 @@ export default [
   { contentfulId: 'navigation', parser: parseNavigation, componentName: 'Navigation', component: Navigation },
   { contentfulId: 'separator', parser: parseSeparator, componentName: 'Separator', component: Separator },
   { contentfulId: 'titleSection', parser: parseTitleSection, componentName: 'TitleSection', component: TitleSection },
+  { contentfulId: 'descriptionSection', parser: parseDescriptionSection, componentName: 'DescriptionSection', component: DescriptionSection },
   { contentfulId: 'homeCustomersSection', parser: parseHomeCustomers, componentName: 'HomeCustomers', component: HomeCustomers },
   { contentfulId: 'homeHeroSection', parser: parseHomeHero, componentName: 'HomeHero', component: HomeHero },
   { contentfulId: 'imageBannerSection', parser: parseImageBanner, componentName: 'ImageBanner', component: ImageBanner },

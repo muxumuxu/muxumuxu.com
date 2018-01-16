@@ -9,7 +9,7 @@
       <div class="list">
         <h4>{{data.list.title}}</h4>
         <p v-for="item in data.list.items">{{item}}</p>
-        <hyper-link v-for="link in data.list.links" :data="link" />
+        <hyper-link v-for="link in data.list.links" :data="link" :key="link" />
       </div>
     </div>
   </div>
@@ -20,10 +20,7 @@ import markdownMixin from '@/mixins/markdown-mixin'
 
 export default {
   props: ['data'],
-  mixins: [markdownMixin],
-  created () {
-    console.log(this.data.list)
-  }
+  mixins: [markdownMixin]
 }
 </script>
 
