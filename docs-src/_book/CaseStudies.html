@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Créer son composant · GitBook</title>
+        <title>Composants d'un case study · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Components.html" />
     
-    <link rel="prev" href="Components.html" />
+    
+    <link rel="prev" href="Navigation.html" />
     
 
     </head>
@@ -139,7 +141,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="CaseStudies.html">
+        <li class="chapter active" data-level="1.5" data-path="CaseStudies.html">
             
                 <a href="CaseStudies.html">
             
@@ -165,7 +167,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="CreateComponent.html">
+        <li class="chapter " data-level="1.7" data-path="CreateComponent.html">
             
                 <a href="CreateComponent.html">
             
@@ -208,7 +210,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Créer son composant</a>
+        <a href="." >Composants d'un case study</a>
     </h1>
 </div>
 
@@ -223,22 +225,42 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="cr&#xE9;er-son-composant">Cr&#xE9;er son composant</h1>
-<ol>
-<li><p>D&#xE9;finir le Content Model dans <a href="https://app.contentful.com/spaces/919rtc7exzm8/content_types_new/fields" target="_blank">Contentful</a></p>
-<ul>
-<li>Bien penser &#xE0; suffixer le Model par <strong>Section</strong>, si celui-ci s&apos;int&#xE9;gre directement dans une page. Par exemple : <strong>Image Carousel Section</strong></li>
-<li>Faire attention &#xE0; ce que le champs soit marqu&#xE9; comme <strong>Required</strong> si besoin</li>
-<li>Activer la localisation du champs si besoin</li>
-</ul>
-</li>
-<li><p>Cr&#xE9;er un fichier <code>/api/parser/image-carousel.js</code> qui servira &#xE0; parser le contenu de cette nouvelle section.</p>
-</li>
-<li><p>Cr&#xE9;er le composant Vue <code>/components/image-carousel.vue</code>, les donn&#xE9;es Contentful seront directement pass&#xE9;es via la props <code>data</code>.</p>
-</li>
-<li><p>R&#xE9;f&#xE9;rencer le parser et le composant dans <code>/api/components-mapping.js</code>, et conditionner l&apos;application du parsing sur l&apos;id contentful (<code>imageCarouselSection</code>)</p>
-</li>
-</ol>
+                                <h1 id="composants">Composants</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Contentful Name</th>
+<th style="text-align:center">Component Name</th>
+<th style="text-align:center">Component Image</th>
+<th>Image R (WxH)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Case Study Title</td>
+<td style="text-align:center"><code>case-study-title</code></td>
+<td style="text-align:center"><img src="images/case-study-title.png" alt="case-study-title"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Case Study Text</td>
+<td style="text-align:center"><code>case-study-text</code></td>
+<td style="text-align:center"><img src="images/case-study-text.png" alt="case-study-text"></td>
+<td>--------------</td>
+</tr>
+<tr>
+<td style="text-align:left">Case Study Image</td>
+<td style="text-align:center"><code>case-study-image</code></td>
+<td style="text-align:center"><img src="images/case-study-image.png" alt="case-study-image"></td>
+<td>autoxauto</td>
+</tr>
+<tr>
+<td style="text-align:left">Case Study Blank Space</td>
+<td style="text-align:center"><code>case-study-blank-space</code></td>
+<td style="text-align:center"><img src="images/case-study-blank-space.png" alt="case-study-blank-space"></td>
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -266,10 +288,14 @@
 
             
                 
-                <a href="Components.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Autres composants">
+                <a href="Navigation.html" class="navigation navigation-prev " aria-label="Previous page: Composants de navigation">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="Components.html" class="navigation navigation-next " aria-label="Next page: Autres composants">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -278,7 +304,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Créer son composant","level":"1.7","depth":1,"previous":{"title":"Autres composants","level":"1.6","depth":1,"path":"Components.md","ref":"Components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"CreateComponent.md","mtime":"2018-01-11T09:43:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-17T14:54:09.740Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Composants d'un case study","level":"1.5","depth":1,"next":{"title":"Autres composants","level":"1.6","depth":1,"path":"Components.md","ref":"Components.md","articles":[]},"previous":{"title":"Composants de navigation","level":"1.4","depth":1,"path":"Navigation.md","ref":"Navigation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"CaseStudies.md","mtime":"2018-01-17T14:53:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-17T14:54:09.740Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

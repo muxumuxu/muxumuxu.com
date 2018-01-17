@@ -21,6 +21,3 @@
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
 | Title Section           | `title-section`               | ![title-section](images/title-section.png)                  |--------------|
 | Description Section     | `description-section`         | ![description-section](images/description-section.png)      |--------------|
-| Case Study Title        | `case-study-title`            | ![case-study-title](images/case-study-title.png)            |--------------|
-| Case Study Text         | `case-study-text`             | ![case-study-text](images/case-study-text.png)              |--------------|
-| Case Study Image        | `case-study-image`            | ![case-study-image](images/case-study-image.png)            | autoxauto    |
