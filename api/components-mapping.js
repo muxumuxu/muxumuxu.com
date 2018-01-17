@@ -67,6 +67,9 @@ import parseCaseStudyTitle from './parser/case-study-title'
 import CaseStudyText from '@/components/case-study-text'
 import parseCaseStudyText from './parser/case-study-text'
 
+import CaseStudyImage from '@/components/case-study-image'
+import parseCaseStudyImage from './parser/case-study-image'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -104,5 +107,6 @@ export default [
   { contentfulId: 'imageCarouselSection', parser: parseImageCarousel, componentName: 'ImageCarousel', component: ImageCarousel },
   { contentfulId: 'caseStudyTitleSection', parser: parseCaseStudyTitle, componentName: 'CaseStudyTitle', component: CaseStudyTitle },
   { contentfulId: 'caseStudyTextSection', parser: parseCaseStudyText, componentName: 'CaseStudyText', component: CaseStudyText },
+  { contentfulId: 'caseStudyImageSection', parser: parseCaseStudyImage, componentName: 'CaseStudyImage', component: CaseStudyImage },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
