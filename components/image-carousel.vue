@@ -23,6 +23,10 @@ div[data-fluffy-container]
   height: 510px
   width: auto
 
+img
+  height: 510px
+  width: auto
+
 @media screen and (max-width: 1050px)
 
   div[data-fluffy-container]
