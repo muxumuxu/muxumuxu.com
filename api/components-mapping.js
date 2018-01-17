@@ -37,6 +37,9 @@ import parsePartnersGrid from './parser/partners-grid'
 import PortfolioGrid from '@/components/portfolio-grid'
 import parsePortfolioGrid from './parser/portfolio-grid'
 
+import HighlightedProjects from '@/components/highlighted-projects'
+import parseHighlightedProjects from './parser/highlighted-projects'
+
 import BlogArticleLink from '@/components/blog-article-link'
 import parseBlogArticleLink from './parser/blog-article-link'
 
@@ -87,6 +90,7 @@ export default [
   { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
   { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
   { contentfulId: 'portfolioGridSection', parser: parsePortfolioGrid, componentName: 'PortfolioGrid', component: PortfolioGrid },
+  { contentfulId: 'highlightedProjectsSection', parser: parseHighlightedProjects, componentName: 'HighlightedProjects', component: HighlightedProjects },
   { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
   { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
   { contentfulId: 'twoColumnLinksSection', parser: parseTwoColumnLinks, componentName: 'TwoColumnLinks', component: TwoColumnLinks },
