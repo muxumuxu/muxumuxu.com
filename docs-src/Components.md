@@ -21,3 +21,4 @@
 | Separator               | `separator`                   | ![separator](images/separator.png)                          |--------------|
 | Title Section           | `title-section`               | ![title-section](images/title-section.png)                  |--------------|
 | Description Section     | `description-section`         | ![description-section](images/description-section.png)      |--------------|
+| Case Study Title        | `case-study-title`            | ![case-study-title](images/case-study-title.png)            |--------------|
