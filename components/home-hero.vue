@@ -4,7 +4,7 @@
     <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" />
     <p @click="showVideo()" class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
     <div class="border"></div>
-    <video-overlay v-if="showingVideo" :url="data.videoUrl" :onClose="closeVideo" />
+    <video-overlay v-if="showingVideo" :url="data.videoUrl" @onClose="closeVideo" />
   </div>
 </template>
 
