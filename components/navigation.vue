@@ -28,6 +28,9 @@ export default {
   margin-left: 25px
   font-size: 16px
 
+  &.nuxt-link-active
+    color: $muxu-green
+
   &:hover
     opacity: 0.7
 
