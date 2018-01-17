@@ -21,6 +21,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
+@import '../assets/css/variables.sass'
 
 h1
   margin-bottom: 50px
