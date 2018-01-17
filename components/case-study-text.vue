@@ -18,4 +18,10 @@ export default {
 
 .content
   max-width: 640px
+
+  /deep/ a
+    border-bottom: 1px solid #ededed
+
+    &:hover
+      border-bottom: 1px solid $muxu-green
 </style>
