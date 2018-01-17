@@ -41,4 +41,7 @@ a
 
 .description
   width: 470px
+
+  /deep/ .underlined
+    padding-bottom: 5px
 </style>
