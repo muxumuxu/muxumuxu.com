@@ -70,6 +70,9 @@ import parseCaseStudyText from './parser/case-study-text'
 import CaseStudyImage from '@/components/case-study-image'
 import parseCaseStudyImage from './parser/case-study-image'
 
+import CaseStudyBlankSpace from '@/components/case-study-blank-space'
+import parseCaseStudyBlankSpace from './parser/case-study-blank-space'
+
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
 
@@ -108,5 +111,6 @@ export default [
   { contentfulId: 'caseStudyTitleSection', parser: parseCaseStudyTitle, componentName: 'CaseStudyTitle', component: CaseStudyTitle },
   { contentfulId: 'caseStudyTextSection', parser: parseCaseStudyText, componentName: 'CaseStudyText', component: CaseStudyText },
   { contentfulId: 'caseStudyImageSection', parser: parseCaseStudyImage, componentName: 'CaseStudyImage', component: CaseStudyImage },
+  { contentfulId: 'caseStudyBlankSpaceSection', parser: parseCaseStudyBlankSpace, componentName: 'CaseStudyBlankSpace', component: CaseStudyBlankSpace },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]
