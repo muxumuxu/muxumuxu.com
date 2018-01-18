@@ -54,7 +54,7 @@ h5
     margin: 0
 
   .project
-    width: 100%
-    margin-bottom: 40px
+    width: 70%
+    margin: 0 auto 40px
 
 </style>

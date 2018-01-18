@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
     <div class="title" v-html="convertMarkdownToHTML(data.title)"></div>
-    <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" />
     <p @click="showVideo()" class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
+    <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" />
     <div class="border"></div>
     <video-overlay v-if="showingVideo" :url="data.videoUrl" @onClose="closeVideo" />
   </div>
@@ -41,7 +41,7 @@ export default {
   // box-shadow: inset 0 -1px 0 0 #EAEAEA
 
 .border
-  width: 100%
+  width: 97%
   height: 1px
   background: #EAEAEA
   position: absolute
@@ -72,5 +72,29 @@ export default {
 
     span
       color: $muxu-green
+
+@media screen and (max-width: 800px)
+
+  .wrapper
+    padding-bottom: 50px
+
+  .illustration
+    position: relative
+    width: 100%
+
+  .border
+    bottom: 53px
+
+@media screen and (max-width: 700px)
+
+  .wrapper
+    padding-bottom: 50px
+
+  .title /deep/ p
+    font-size: 26px
+    line-height: 36px
+
+  .border
+    display: none
 
 </style>
