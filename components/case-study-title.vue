@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h1>{{data.title}}</h1>
     <div class="information flex-row space-between">
-      <div v-for="information in data.information">
+      <div class="details" v-for="information in data.information">
         <h4>{{information.title}}</h4>
         <p>{{information.description}}</p>
       </div>
@@ -34,4 +34,13 @@ a
 
 .link
   min-width: 200px
+
+@media screen and (max-width: 980px)
+
+  .information
+    flex-direction: column
+
+  .details, .link
+    margin-top: 30px
+
 </style>

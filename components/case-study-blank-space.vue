@@ -11,4 +11,9 @@ export default {
 
 .wrapper
   padding: 50px 20px
+
+@media screen and (max-width: 700px)
+
+  .wrapper
+    padding: 25px 20px
 </style>
