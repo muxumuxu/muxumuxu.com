@@ -63,4 +63,41 @@ h5
   &:not(:last-child)
     margin-right: 35px
 
+@media screen and (max-width: 1020px)
+
+  img
+    height: 180px
+
+  .project:not(:last-child)
+    margin-right: 25px
+
+@media screen and (max-width: 850px)
+
+  img
+    height: 150px
+
+  .project:not(:last-child)
+    margin-right: 20px
+
+@media screen and (max-width: 700px)
+
+  .line
+    margin: 0
+
+    &:not(:last-child)
+      margin: 0
+
+    &:last-child
+
+      .project:last-child
+        margin-bottom: 0
+
+    &:nth-child(2)
+
+      .project:nth-child(2)
+        margin-right: 0
+
+  .project
+    margin-bottom: 40px
+
 </style>
