@@ -32,7 +32,7 @@ h5
 
 img
   width: 424px
-  height: auto
+  height: 424px
 
 .projects
   column-count: 2
