@@ -26,4 +26,29 @@ h2
 .section
   max-width: 470px
 
+  &:first-child
+    padding-right: 10px
+
+  &:last-child
+    padding-left: 10px
+
+@media screen and (max-width: 700px)
+
+  h2
+    margin-bottom: 50px
+
+  .sections
+    flex-direction: column
+
+  .section
+    max-width: none
+    width: 100%
+
+    &:first-child
+      padding: 0
+
+    &:last-child
+      padding: 0
+      margin-top: 30px
+
 </style>
