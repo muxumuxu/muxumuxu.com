@@ -46,4 +46,40 @@ img
 
 .fixed-height
   height: 790px
+
+@media screen and (max-width: 920px)
+
+  h2
+    padding: 0
+    min-height: inherit
+
+  .wrapper
+    flex-direction: column
+    text-align: center
+    padding: 50px 20px 100px
+
+  .projects
+    column-count: 1
+
+  .project
+    display: block
+    margin: 50px auto 0
+
+  .fixed-height
+    height: inherit
+
+@media screen and (max-width: 600px)
+
+  .wrapper
+    text-align: left
+    padding: 50px 20px
+
+  .project
+    max-width: none
+    width: 100%
+    text-align: left
+
+  img
+    width: 100%
+    height: auto
 </style>
