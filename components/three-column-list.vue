@@ -28,7 +28,7 @@ h2
   p
     margin-bottom: 4px
 
-@media screen and (max-width: 520px)
+@media screen and (max-width: 640px)
 
   .sections
     flex-direction: column
