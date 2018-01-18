@@ -4,6 +4,7 @@
     <p @click="showVideo()" class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
     <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" />
     <div class="border"></div>
+    <div class="separator"></div>
     <video-overlay v-if="showingVideo" :url="data.videoUrl" @onClose="closeVideo" />
   </div>
 </template>
@@ -46,6 +47,12 @@ export default {
   background: #EAEAEA
   position: absolute
   bottom: 0
+
+.separator
+  width: 100%
+  height: 1px
+  background: #EAEAEA
+  display: none
 
 .title /deep/ p
   font-size: 32px
@@ -96,5 +103,10 @@ export default {
 
   .border
     display: none
+
+  .separator
+    display: block
+    position: relative
+    bottom: -50px
 
 </style>
