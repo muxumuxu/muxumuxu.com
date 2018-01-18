@@ -41,7 +41,25 @@ a
 
 .description
   width: 470px
+  padding-right: 10px
 
   /deep/ .underlined
     padding-bottom: 5px
+
+.list
+  padding-left: 10px
+
+@media screen and (max-width: 820px)
+
+  .sections
+    flex-direction: column
+
+  .description
+    padding: 0
+    width: 100%
+
+  .list
+    padding: 0
+    margin-top: 70px
+
 </style>
