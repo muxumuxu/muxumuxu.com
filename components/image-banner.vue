@@ -37,4 +37,13 @@ a
   &:hover
     background: rgba(0, 0, 0, 0.75)
 
+@media screen and (max-width: 600px)
+
+  .title
+    padding: 120px 20px
+
+    /deep/ p
+      font-size: 24px
+      line-height: 30px
+
 </style>
