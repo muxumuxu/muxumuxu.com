@@ -37,6 +37,9 @@ a
 
 @media screen and (max-width: 980px)
 
+  h1
+    margin-bottom: 0
+
   .information
     flex-direction: column
 
