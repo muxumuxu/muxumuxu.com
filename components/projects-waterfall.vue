@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper projects">
+  <div class="wrapper projects" :class="{'fixed-height': data.projects.length === 2}">
     <h2>{{data.title}}</h2>
     <div class="project" v-for="project in data.projects" :key="project.title" @click="showProject(project)">
       <image-hi-res-contentful :data="project.image" :height="424" />
@@ -24,9 +24,15 @@ export default {
 
 h2
   min-height: 200px
+  display: inline-block
+  padding-top: 35px
 
 h5
   margin: 15px 0 10px
+
+img
+  width: 424px
+  height: auto
 
 .projects
   column-count: 2
@@ -36,4 +42,8 @@ h5
   max-width: 470px
   cursor: pointer
   margin-top: 50px
+  display: inline-block
+
+.fixed-height
+  height: 790px
 </style>

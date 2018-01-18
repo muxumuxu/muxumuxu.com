@@ -10,6 +10,7 @@
 | Partners Grid           | `partners-grid`               | ![partners-grid](images/partners-grid.png)                  | 50xauto      |
 | Portfolio Grid          | `portfolio-grid`              | ![portfolio-grid](images/portfolio-grid.png)                | autox440     |
 | Highlighted Projects    | `highlighted-projects`        | ![highlighted-projects](images/highlighted-projects.png)    | autox848     |
+| Projects Waterfall      | `projects-waterfall`          | ![projects-waterfall](images/projects-waterfall.png)        | autox848     |
 | Job List                | `job-list`                    | ![job-list](images/job-list.png)                            |--------------|
 | Logos List              | `logos-list`                  | ![logos-list](images/logos-list.png)                        | 40xauto      |
 | Blog Article Link       | `blog-article-link`           | ![blog-article-link](images/blog-article-link.png)          |--------------|
