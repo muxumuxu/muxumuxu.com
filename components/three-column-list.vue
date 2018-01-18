@@ -27,4 +27,17 @@ h2
 
   p
     margin-bottom: 4px
+
+@media screen and (max-width: 520px)
+
+  .sections
+    flex-direction: column
+
+  .section
+    width: auto
+
+    &:not(:first-child)
+      h4
+        margin-top: 30px
+
 </style>
