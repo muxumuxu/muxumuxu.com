@@ -78,4 +78,62 @@ h5
   position: absolute
   z-index: 10
   transition: .3s opacity linear
+
+@media screen and (max-width: 1020px)
+
+  .members
+    justify-content: space-between
+
+  .member
+    max-width: 250px
+
+    &:nth-child(4n)
+      margin-right: 33px
+
+    &:nth-last-child(-n+4)
+      margin-bottom: 40px
+
+    &:last-child
+      margin-bottom: 0
+
+  .picture-container
+    width: 250px
+    height: 250px
+
+@media screen and (max-width: 890px)
+
+  .picture-container
+    width: 200px
+    height: 200px
+
+  .member
+    max-width: 200px
+    margin: 0 0 40px
+
+    &:nth-last-child(-n+4)
+      margin: 0 0 40px
+
+    &:nth-child(4n)
+      margin: 0 0 40px
+
+@media screen and (max-width: 710px)
+
+  .picture-container
+    width: 250px
+    height: 250px
+
+  .member
+    max-width: 250px
+
+@media screen and (max-width: 550px)
+
+  .picture-container
+    width: 100%
+    height: auto
+
+  .member
+    max-width: none
+    width: 100%
+
+
 </style>
