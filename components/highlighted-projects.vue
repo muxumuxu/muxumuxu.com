@@ -37,4 +37,24 @@ h5
 
 .project
   cursor: pointer
+
+@media screen and (max-width: 1000px)
+
+  img
+    width: 100%
+    height: auto
+
+  .project
+    width: 30%
+
+@media screen and (max-width: 600px)
+
+  .projects
+    flex-direction: column
+    margin: 0
+
+  .project
+    width: 100%
+    margin-bottom: 40px
+
 </style>
