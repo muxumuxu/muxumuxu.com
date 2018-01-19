@@ -20,13 +20,13 @@ export default {
   computed: {
     hasLinks () {
       return this.data.links.length > 0
-    },
-    methods: {
-      toggleMenu: function () {
-        console.log('coucou')
-        const list = document.getElementById('menu-list')
-        list.classList.toggle('invisible')
-      }
+    }
+  },
+  methods: {
+    toggleMenu () {
+      console.log('coucou')
+      const list = document.getElementById('menu-list')
+      list.classList.toggle('invisible')
     }
   }
 }
