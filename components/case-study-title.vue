@@ -6,7 +6,7 @@
         <h4>{{information.title}}</h4>
         <p>{{information.description}}</p>
       </div>
-      <div class="link">
+      <div v-if="data.link" class="link">
         <h4>{{data.link.title}}</h4>
         <hyper-link class="underlined" :data="data.link.link" :key="link" />
       </div>
@@ -32,7 +32,7 @@ a
 .underlined
   padding-bottom: 5px
 
-.link
+.details, .link
   min-width: 200px
 
 @media screen and (max-width: 980px)

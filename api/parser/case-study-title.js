@@ -6,9 +6,12 @@ const parseCaseStudyTitle = entry => {
     const { title, description } = information.fields
     return { title, description }
   })
-  const link = {
-    title: entry.fields.link.fields.title,
-    link: parseLinkEntry(entry.fields.link.fields.links[0])
+  let link = null
+  if (entry.fields.link) {
+    link = {
+      title: entry.fields.link.fields.title,
+      link: parseLinkEntry(entry.fields.link.fields.links[0])
+    }
   }
   return { title, information, link }
 }
