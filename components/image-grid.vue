@@ -90,6 +90,9 @@ h5
     &:nth-child(4n)
       margin-right: 33px
 
+    &:nth-child(3n)
+      margin-right: 0
+
     &:nth-last-child(-n+4)
       margin-bottom: 40px
 
@@ -100,23 +103,28 @@ h5
     width: 250px
     height: 250px
 
-@media screen and (max-width: 890px)
+@media screen and (max-width: 860px)
 
   .picture-container
-    width: 200px
-    height: 200px
+    width: 230px
+    height: 230px
 
   .member
-    max-width: 200px
-    margin: 0 0 40px
+    max-width: 230px
 
-    &:nth-last-child(-n+4)
-      margin: 0 0 40px
+@media screen and (max-width: 800px)
 
-    &:nth-child(4n)
-      margin: 0 0 40px
+  .picture-container
+    width: 300px
+    height: 300px
 
-@media screen and (max-width: 710px)
+  .member
+    max-width: 300px
+
+    &:nth-child(2n)
+      margin-right: 0
+
+@media screen and (max-width: 680px)
 
   .picture-container
     width: 250px
@@ -125,7 +133,25 @@ h5
   .member
     max-width: 250px
 
-@media screen and (max-width: 550px)
+@media screen and (max-width: 580px)
+
+  .picture-container
+    width: 230px
+    height: 230px
+
+  .member
+    max-width: 230px
+
+@media screen and (max-width: 540px)
+
+  .picture-container
+    width: 200px
+    height: 200px
+
+  .member
+    max-width: 200px
+
+@media screen and (max-width: 480px)
 
   .picture-container
     width: 100%
@@ -134,6 +160,7 @@ h5
   .member
     max-width: none
     width: 100%
+    margin-right: 0
 
 
 </style>
