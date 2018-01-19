@@ -35,4 +35,29 @@ export default {
 .logo
   margin-bottom: 10px
   height: 50px
+
+@media screen and (max-width: 1020px)
+
+  .partners
+    justify-content: space-between
+
+  .partner
+    width: 400px
+
+@media screen and (max-width: 900px)
+
+  .partner
+    width: 350px
+
+@media screen and (max-width: 800px)
+
+  .partners
+    margin-bottom: 0
+
+  .partner
+    width: 100%
+
+    &:nth-last-child(-n+3):not(:last-child)
+      margin-bottom: 50px
+
 </style>

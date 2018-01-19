@@ -37,6 +37,9 @@ import parsePartnersGrid from './parser/partners-grid'
 import PortfolioGrid from '@/components/portfolio-grid'
 import parsePortfolioGrid from './parser/portfolio-grid'
 
+import HighlightedProjects from '@/components/highlighted-projects'
+import parseHighlightedProjects from './parser/highlighted-projects'
+
 import BlogArticleLink from '@/components/blog-article-link'
 import parseBlogArticleLink from './parser/blog-article-link'
 
@@ -57,6 +60,24 @@ import parseTwoColumnImage from './parser/two-column-image'
 
 import ImageCarousel from '@/components/image-carousel'
 import parseImageCarousel from './parser/image-carousel'
+
+import ProjectsWaterfall from '@/components/projects-waterfall'
+import parseProjectsWaterfall from './parser/projects-waterfall'
+
+import CaseStudyTitle from '@/components/case-study-title'
+import parseCaseStudyTitle from './parser/case-study-title'
+
+import CaseStudyText from '@/components/case-study-text'
+import parseCaseStudyText from './parser/case-study-text'
+
+import CaseStudyImage from '@/components/case-study-image'
+import parseCaseStudyImage from './parser/case-study-image'
+
+import CaseStudyGif from '@/components/case-study-gif'
+import parseCaseStudyGif from './parser/case-study-gif'
+
+import CaseStudyBlankSpace from '@/components/case-study-blank-space'
+import parseCaseStudyBlankSpace from './parser/case-study-blank-space'
 
 import FooterSection from '@/components/footer-section'
 import parseFooterSection from './parser/footer-section'
@@ -87,10 +108,17 @@ export default [
   { contentfulId: 'jobListSection', parser: parseJobList, componentName: 'JobList', component: JobList },
   { contentfulId: 'partnersGridSection', parser: parsePartnersGrid, componentName: 'PartnersGrid', component: PartnersGrid },
   { contentfulId: 'portfolioGridSection', parser: parsePortfolioGrid, componentName: 'PortfolioGrid', component: PortfolioGrid },
+  { contentfulId: 'highlightedProjectsSection', parser: parseHighlightedProjects, componentName: 'HighlightedProjects', component: HighlightedProjects },
   { contentfulId: 'logosListSection', parser: parseLogosList, componentName: 'LogosList', component: LogosList },
   { contentfulId: 'twoColumnListSection', parser: parseTwoColumnList, componentName: 'TwoColumnList', component: TwoColumnList },
   { contentfulId: 'twoColumnLinksSection', parser: parseTwoColumnLinks, componentName: 'TwoColumnLinks', component: TwoColumnLinks },
   { contentfulId: 'twoColumnImageSection', parser: parseTwoColumnImage, componentName: 'TwoColumnImage', component: TwoColumnImage },
   { contentfulId: 'imageCarouselSection', parser: parseImageCarousel, componentName: 'ImageCarousel', component: ImageCarousel },
+  { contentfulId: 'projectsWaterfallSection', parser: parseProjectsWaterfall, componentName: 'ProjectsWaterfall', component: ProjectsWaterfall },
+  { contentfulId: 'caseStudyTitleSection', parser: parseCaseStudyTitle, componentName: 'CaseStudyTitle', component: CaseStudyTitle },
+  { contentfulId: 'caseStudyTextSection', parser: parseCaseStudyText, componentName: 'CaseStudyText', component: CaseStudyText },
+  { contentfulId: 'caseStudyImageSection', parser: parseCaseStudyImage, componentName: 'CaseStudyImage', component: CaseStudyImage },
+  { contentfulId: 'caseStudyGifSection', parser: parseCaseStudyGif, componentName: 'CaseStudyGif', component: CaseStudyGif },
+  { contentfulId: 'caseStudyBlankSpaceSection', parser: parseCaseStudyBlankSpace, componentName: 'CaseStudyBlankSpace', component: CaseStudyBlankSpace },
   { contentfulId: 'footerSection', parser: parseFooterSection, componentName: 'FooterSection', component: FooterSection }
 ]

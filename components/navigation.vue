@@ -28,7 +28,18 @@ export default {
   margin-left: 25px
   font-size: 16px
 
+  &.nuxt-link-active
+    color: $muxu-green
+
   &:hover
     opacity: 0.7
+
+@media screen and (max-width: 700px)
+
+  .wrapper
+    padding: 50px 20px
+
+  .link:not(:first-child)
+    display: none
 
 </style>

@@ -37,4 +37,25 @@ img
   width: 470px
   height: auto
 
+@media screen and (max-width: 980px)
+
+  .sections
+    flex-direction: column
+
+  .content
+    width: 100%
+
+  img
+    order: -1
+    margin-bottom: 50px
+
+@media screen and (max-width: 600px)
+
+  h2
+    margin-bottom: 30px
+
+  img
+    width: 100%
+    height: auto
+
 </style>

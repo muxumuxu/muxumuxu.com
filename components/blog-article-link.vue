@@ -32,4 +32,19 @@ p
 .right
   width: 550px
   padding-left: 20px
+
+@media screen and (max-width: 700px)
+
+  h2
+    width: 100%
+    margin-bottom: 30px
+
+  .wrapper
+    flex-direction: column
+    padding-bottom: 60px
+
+  .right
+    width: 100%
+    padding: 0
+
 </style>

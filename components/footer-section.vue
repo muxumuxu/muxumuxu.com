@@ -89,11 +89,14 @@ p
   &:last-child
     max-width: 300px
 
+    h3
+      margin-bottom: 16px
+
   &:nth-child(2)
     padding-right: 90px
 
 form
-  padding-top: 7px
+  padding-top: 5px
 
   label
     display: none
@@ -131,5 +134,23 @@ form
       &:hover
         color: $muxu-green
         cursor: pointer
+
+@media screen and (max-width: 900px)
+
+  .section:nth-child(2)
+    padding-right: 0
+
+@media screen and (max-width: 740px)
+
+  .wrapper
+    flex-direction: column
+    padding: 50px 20px
+
+  .section:not(:first-child)
+    margin-top: 50px
+
+  .location
+    padding-top: 0
+    margin-top: -6px
 
 </style>

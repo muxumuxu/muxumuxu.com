@@ -16,10 +16,17 @@ export default {
 <style lang="sass">
 @import '../assets/css/variables.sass'
 
-.content /deep/ blockquote p
-  opacity: 0.5
-  font-style: italic
-  opacity: 0.5
-  font-size: 14px
+.content
+
+  /deep/ blockquote p
+    opacity: 0.5
+    font-style: italic
+    opacity: 0.5
+    font-size: 14px
+
+@media screen and (max-width: 600px)
+
+  .content /deep/ iframe
+    width: 100%
 
 </style>
