@@ -71,6 +71,7 @@ const config = {
     { src: '~plugins/hyper-link.js', ssr: true },
     { src: '~plugins/image-hi-res.js', ssr: true },
     { src: '~plugins/webfont.js', ssr: false },
+    { src: '~plugins/ga.js', ssr: false },
     { src: '~plugins/console.js', ssr: false}
   ],
   /*
