@@ -4,7 +4,7 @@
       <image-hi-res-contentful :data="data.logo" />
     </router-link>
 
-    <button @click="toggleMenu" class="menu-button" v-if="hasLinks">{{data.menu}}</button>
+    <span @click="toggleMenu" class="menu-button" v-if="hasLinks">{{data.menu}}</span>
 
     <div id="menu-list" class="invisible" v-if="hasLinks">
       <router-link class="link" v-for="link in data.links" :key="link.url" :to="link.url">
@@ -37,14 +37,33 @@ export default {
 
 .wrapper
   padding: 50px 20px
+  position: relative
 
 .menu-button
   color: $normal-grey
   font-size: 18px
   float: right
   cursor: pointer
+  margin-top: 2px
 
-.menu-list
-  display: block
+#menu-list
+  position: absolute
+  width: 100%
+  top: 120px
+  left: 0
+  background: $white
+  border-top: 1px solid #EAEAEA
+  border-bottom: 1px solid #EAEAEA
+  z-index: 9999
+
+  a
+    display: block
+    font-size: 21px
+    color: $black
+    padding: 30px 0
+    margin: 0 30px
+
+    &:not(:last-child)
+      border-bottom: 1px solid #EAEAEA
 
 </style>
