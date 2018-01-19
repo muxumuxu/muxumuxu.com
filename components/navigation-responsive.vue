@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper flex-row space-between align-center">
+  <div class="wrapper flex-row">
     <router-link to="/" style="width: 123px; height: 22px">
       <image-hi-res-contentful :data="data.logo" />
     </router-link>
@@ -44,7 +44,7 @@ export default {
   font-size: 18px
   float: right
   cursor: pointer
-  margin-top: 2px
+  margin-top: 4px
 
 #menu-list
   position: absolute
