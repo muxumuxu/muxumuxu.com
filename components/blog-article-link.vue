@@ -10,10 +10,7 @@
 
 <script>
 export default {
-  props: ['data'],
-  create () {
-    console.log(this.data)
-  }
+  props: ['data']
 }
 </script>
 

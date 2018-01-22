@@ -24,7 +24,6 @@ export default {
   },
   methods: {
     toggleMenu () {
-      console.log('coucou')
       const list = document.getElementById('menu-list')
       list.classList.toggle('invisible')
     }
