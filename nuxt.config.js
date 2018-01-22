@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const axios = require('axios')
 
 const config = {
   css: [
@@ -44,15 +45,21 @@ const config = {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    routes: [
-      '/',
-      '/work',
-      '/services',
-      '/ventures',
-      '/about',
-      '/blog',
-      '/careers'
-    ]
+    routes: (callback) => {
+      const spaceId = process.env.CONTENTFUL_SPACE_ID
+      const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN
+      const url = `https://cdn.contentful.com/spaces/${spaceId}/entries?access_token=${accessToken}&content_type=sitemap`
+      return axios.get(url)
+      .then(response => {
+        if (response.data.items.length === 0) {
+          callback(null, [])
+          return
+        }
+        const sitemap = response.data.items[0]
+        callback(null, sitemap.fields.urls)
+      })
+      .catch(callback)
+    }
   },
   /*
   ** Customize the progress bar color
