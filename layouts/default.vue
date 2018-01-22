@@ -6,7 +6,6 @@
 
 <style>
 #site-layout {
-  max-width: 1440px;
   margin: auto;
   background-color: white;
 }
