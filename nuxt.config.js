@@ -18,7 +18,7 @@ const config = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'Muxu.Muxu' },
       { hid: 'og:title', property: 'og:title', content: 'Muxu.Muxu' },
-      { hid: 'og:image', property: 'og:image', content: 'https://muxumuxu.com/og-image.png' },
+      { hid: 'og:image', property: 'og:image', content: 'https://muxumuxu.com/static/og-image.png' },
       { hid: 'og:url', property: 'og:url', content: 'https://muxumuxu.com/' },
       {
         hid: 'og:description',
@@ -28,7 +28,7 @@ const config = {
       },
       { hid: 'twitter:title', property: 'twitter:site', content: '@wearemuxu' },
       { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
-      { hid: 'twitter:image', property: 'twitter:image', content: 'https://muxumuxu.com/og-image.png' },
+      { hid: 'twitter:image', property: 'twitter:image', content: 'https://muxumuxu.com/static/og-image.png' },
       { hid: 'twitter:widgets:theme', property: 'twitter:widgets:theme', content: 'light' },
       { hid: 'twitter:widgets:link-color', property: 'twitter:widgets:link-color', content: '#33CC33' },
       { hid: 'twitter:widgets:border-color', property: 'twitter:widgets:border-color', content: '#33CC33' }
