@@ -6,7 +6,7 @@
         <h4>{{data.description.title}}</h4>
         <div class="content" v-html="convertMarkdownToHTML(data.description.description)"></div>
       </div>
-      <image-hi-res-contentful :data="data.image" />
+      <image-hi-res-contentful :data="data.image" :width="470" />
     </div>
   </div>
 </template>

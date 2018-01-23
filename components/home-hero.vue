@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="title" v-html="convertMarkdownToHTML(data.title)"></div>
     <p @click="showVideo()" class="video-cta" :style="{'background': 'url(' + data.icon.src + ') no-repeat left center'}"><span>{{data.videoCta}}</span></p>
-    <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" />
+    <image-hi-res-contentful class="illustration" :data="data.illustration" :interactive="true" :height="438" />
     <div class="border"></div>
     <div class="separator"></div>
     <video-overlay v-if="showingVideo" :url="data.videoUrl" @onClose="closeVideo" />
