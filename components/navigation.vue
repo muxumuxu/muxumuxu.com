@@ -5,7 +5,7 @@
 
     <div class="wrapper flex-row space-between align-center desktop-only">
       <router-link to="/" style="width: 123px; height: 22px">
-        <image-hi-res-contentful :data="data.logo" :height="19" />
+        <image-hi-res-contentful :data="data.logo" />
       </router-link>
       <div>
         <router-link class="link" v-for="link in data.links" :key="link.url" :to="link.url">
