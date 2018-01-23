@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper flex-row">
     <router-link to="/" style="width: 123px; height: 22px">
-      <image-hi-res-contentful :data="data.logo" />
+      <image-hi-res-contentful :data="data.logo" :height="19" />
     </router-link>
 
     <span @click="toggleMenu" class="menu-button" v-if="hasLinks">{{data.menu}}</span>

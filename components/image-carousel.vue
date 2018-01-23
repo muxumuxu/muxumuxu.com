@@ -1,7 +1,7 @@
 <template>
   <div data-fluffy-container data-fluffy-options='{"showScrollbars": false}'>
     <div data-fluffy-content>
-      <image-hi-res-contentful :data="data.image" />
+      <image-hi-res-contentful :data="data.image" :height="510" />
     </div>
   </div>
 </template>

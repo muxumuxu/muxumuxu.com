@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <image-hi-res-contentful :data="data.image" />
+    <image-hi-res-contentful :data="data.image" :width="980" />
   </div>
 </template>
 

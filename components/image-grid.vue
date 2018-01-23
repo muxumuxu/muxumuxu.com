@@ -4,9 +4,9 @@
     <div class="members">
       <div v-for="member in data.images" class="member">
         <div class="picture-container">
-          <image-hi-res-contentful class="emoji" :data="member.emoji" />
+          <image-hi-res-contentful class="emoji" :data="member.emoji" :width="220" />
           <div class="gif" :style="{'background': 'url(' + member.gifUrl + ') no-repeat center center', 'background-size': 'cover'}"></div>
-          <image-hi-res-contentful class="picture" :data="member.picture" />
+          <image-hi-res-contentful class="picture" :data="member.picture" :width="220" />
         </div>
         <h5>{{member.title}}</h5>
         <h4>{{member.subtitle}}</h4>
