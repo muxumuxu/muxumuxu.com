@@ -37,16 +37,6 @@ h5
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
   grid-gap: 30px
 
-// .member
-//   max-width: 220px
-//   margin: 0 33px 40px 0
-//
-//   &:nth-child(4n)
-//     margin-right: 0
-//
-//   &:nth-last-child(-n+4)
-//     margin-bottom: 0
-
 .picture-container
   width: 100%
   height: 100%
@@ -79,89 +69,5 @@ h5
   position: absolute
   z-index: 10
   transition: .3s opacity linear
-
-// @media screen and (max-width: 1020px)
-//
-//   .members
-//     justify-content: space-between
-//
-//   .member
-//     max-width: 250px
-//
-//     &:nth-child(4n)
-//       margin-right: 33px
-//
-//     &:nth-child(3n)
-//       margin-right: 0
-//
-//     &:nth-last-child(-n+4)
-//       margin-bottom: 40px
-//
-//     &:last-child
-//       margin-bottom: 0
-//
-//   .picture-container
-//     width: 250px
-//     height: 250px
-//
-// @media screen and (max-width: 860px)
-//
-//   .picture-container
-//     width: 230px
-//     height: 230px
-//
-//   .member
-//     max-width: 230px
-//
-// @media screen and (max-width: 800px)
-//
-//   .picture-container
-//     width: 300px
-//     height: 300px
-//
-//   .member
-//     max-width: 300px
-//
-//     &:nth-child(2n)
-//       margin-right: 0
-//
-// @media screen and (max-width: 680px)
-//
-//   .picture-container
-//     width: 250px
-//     height: 250px
-//
-//   .member
-//     max-width: 250px
-//
-// @media screen and (max-width: 580px)
-//
-//   .picture-container
-//     width: 230px
-//     height: 230px
-//
-//   .member
-//     max-width: 230px
-//
-// @media screen and (max-width: 540px)
-//
-//   .picture-container
-//     width: 200px
-//     height: 200px
-//
-//   .member
-//     max-width: 200px
-//
-// @media screen and (max-width: 480px)
-//
-//   .picture-container
-//     width: 100%
-//     height: auto
-//
-//   .member
-//     max-width: none
-//     width: 100%
-//     margin-right: 0
-
 
 </style>
