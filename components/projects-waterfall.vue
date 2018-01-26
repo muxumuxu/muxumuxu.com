@@ -24,8 +24,9 @@ export default {
 
 h2
   min-height: 200px
-  display: inline-block
+  display: block
   padding-top: 35px
+  max-width: 470px
 
 h5
   margin: 15px 0 10px
@@ -35,14 +36,18 @@ img
   height: 424px
 
 .projects
-  column-count: 2
-  column-gap: 40px
+  overflow: hidden
 
 .project
   max-width: 470px
   cursor: pointer
-  margin-top: 50px
-  display: inline-block
+  margin-bottom: 80px
+  display: block
+  float: left
+  &:nth-child(odd)
+    position: relative
+    top: -200px
+    float: right
 
 .fixed-height
   height: 790px
@@ -52,6 +57,7 @@ img
   h2
     padding: 0
     min-height: inherit
+    max-width: none
 
   .wrapper
     flex-direction: column
@@ -64,6 +70,11 @@ img
   .project
     display: block
     margin: 50px auto 0
+    float: none
+    &:nth-child(odd)
+      position: relative
+      top: 0
+      float: none
 
   .fixed-height
     height: inherit
