@@ -101,19 +101,7 @@ The documentation is now live [here](https://muxumuxu.github.io/muxumuxu.com/).
 
 ## Deployment
 
-### Heroku
-
-Before you need to ensure you have added a git remote to the heroku project.
-It push the docker image on Heroku.
-
-```
-npm run deploy # Deploy on muxumuxu.herokuapp.com
-```
-
-You can now access the app:
-
-- [muxumuxu.herokuapp.com](muxumuxu.herokuapp.com)
-- [preview-muxumuxu.herokuapp.com](preview-muxumuxu.herokuapp.com)
+Deployments are automatic once you push the `master` branch.
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
