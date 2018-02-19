@@ -5,7 +5,7 @@
       <a :href="data.email.url">{{data.email.title}}</a>
       <a :href="data.phoneNumber.url">{{data.phoneNumber.title}}</a>
       <div class="location flex-row">
-        <span v-for="location in data.locations">
+        <span v-for="location in data.locations" :key="location.title">
           {{location.title}}
           <image-hi-res-contentful :data="location.image" :width="28" />
         </span>
