@@ -50,6 +50,7 @@ h5
 
 .picture
   width: 100%
+  display: block
   border-radius: 4px
 
 .emoji
@@ -63,6 +64,8 @@ h5
 
 .gif
   width: 100%
+  height: 100%
+  border-radius: 4px
   opacity: 0
   position: absolute
   z-index: 10
