@@ -34,7 +34,7 @@ h5
 
 .members
   display: grid
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+  grid-template-columns: repeat(auto-fill, minmax(222px, 1fr))
   grid-gap: 30px
 
 .picture-container
@@ -50,12 +50,11 @@ h5
 
 .picture
   width: 100%
-  height: 100%
   border-radius: 4px
 
 .emoji
   width: 100%
-  height: 100%
+  border-radius: 4px
   opacity: 0
   z-index: 11
   position: absolute
@@ -64,7 +63,6 @@ h5
 
 .gif
   width: 100%
-  height: 100%
   opacity: 0
   position: absolute
   z-index: 10
