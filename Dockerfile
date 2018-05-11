@@ -1,4 +1,4 @@
-FROM node:8.1.4
+FROM node:9.0
 
 MAINTAINER David Miotti <david@muxumuxu.com>
 
