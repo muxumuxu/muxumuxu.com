@@ -39,7 +39,7 @@ h5
 
 .picture-container
   width: 100%
-  height: 100%
+  height: auto
   border-radius: 4px
   position: relative
   overflow: hidden
@@ -64,7 +64,7 @@ h5
 
 .gif
   width: 100%
-  height: 100%
+  height: auto
   border-radius: 4px
   opacity: 0
   position: absolute
