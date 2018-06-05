@@ -64,7 +64,7 @@ h5
 
 .gif
   width: 100%
-  height: auto
+  height: 100%
   border-radius: 4px
   opacity: 0
   position: absolute
