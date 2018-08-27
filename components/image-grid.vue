@@ -39,7 +39,7 @@ h5
 
 .picture-container
   width: 100%
-  height: 100%
+  height: auto
   border-radius: 4px
   position: relative
   overflow: hidden
