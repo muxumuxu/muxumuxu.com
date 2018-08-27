@@ -8,8 +8,8 @@
       </div>
       <div class="list">
         <h4>{{data.list.title}}</h4>
-        <p v-for="item in data.list.items">{{item}}</p>
-        <hyper-link v-for="link in data.list.links" :data="link" :key="link" />
+        <p v-for="item in data.list.items" :key="`p-${item}`">{{item}}</p>
+        <hyper-link v-for="link in data.list.links" :data="link" :key="`link-${link.url}`" />
       </div>
     </div>
   </div>

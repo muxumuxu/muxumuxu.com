@@ -2,7 +2,7 @@
   <div class="wrapper">
     <h2>{{data.title}}</h2>
     <div class="members">
-      <div v-for="member in data.images" class="member">
+      <div v-for="member in members" class="member" :key="`${member.title}-${member.subtitle}-people`">
         <div class="picture-container">
           <image-hi-res-contentful class="emoji" :data="member.emoji" :width="220" />
           <div class="gif" :style="{'background': 'url(' + member.gifUrl + ') no-repeat center center', 'background-size': 'cover'}"></div>
@@ -16,8 +16,38 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
-  props: ['data']
+  props: ['data'],
+
+  computed: {
+    members () {
+      let members = Array.from(this.data.images)
+      return this.shuffle(members)
+    }
+  },
+
+  methods: {
+    shuffle (array) {
+      let counter = array.length;
+
+      // While there are elements in the array
+      while (counter > 0) {
+          // Pick a random index
+          let index = Math.floor(Math.random() * counter)
+
+          // Decrease counter by 1
+          counter--
+
+          // And swap the last element with it
+          let temp = array[counter]
+          array[counter] = array[index]
+          array[index] = temp
+      }
+
+      return array
+    }
+  }
 }
 </script>
 
